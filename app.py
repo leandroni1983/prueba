@@ -35,4 +35,4 @@ calcula_campeon()
 def bisiestos_www():
 	return render_template('index.html')
 
-app.run("localhost",8080)
+if __name__ == '__main__': app.run()
