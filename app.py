@@ -37,7 +37,7 @@ def index_www():
 
 @app.route("/campeon")
 def campeon_www():
-	return render_template('https://pruebaflask01.herokuapp.com/campeon.html')
+	return render_template('/campeon.html')
 
 
 if __name__ == '__main__': app.run()
