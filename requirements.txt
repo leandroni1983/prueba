@@ -1,3 +1,6 @@
 Flask
 gunicorn
 Jinja2
+pandas
+os
+matplotlib.plot
