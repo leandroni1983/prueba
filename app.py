@@ -36,7 +36,7 @@ def index_www():
 	return render_template('index.html')
 
 @app.route("/campeon")
-def index_www():
+def campeon_www():
 	return render_template('campeon.html')
 
 
