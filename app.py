@@ -5,7 +5,7 @@ import os
 app = Flask(__name__,static_url_path='')
 titulo = "Otro título"
 
-foto = {}
+
 def calcula_campeon():
     equipos= {
         "Racing":{"pg":"9", "pe":"12"  ,"pp":"2" , "gf":"28" ,"gc":"23"},
@@ -32,7 +32,12 @@ def calcula_campeon():
 calcula_campeon()
 
 @app.route("/")
-def bisiestos_www():
+def index_www():
 	return render_template('index.html')
+
+@app.route("/campeon")
+def index_www():
+	return render_template('campeon.html')
+
 
 if __name__ == '__main__': app.run()
